@@ -16,3 +16,4 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EXCLUDED_LINTERS: cfn_nag, ansible-lint, shellcheck, hadolint, write-good, yamllint, markdownlint, cspell, sqlint, NATURAL_LANGUAGE, stylelint
+          DISABLE_LINTERS: stylelint
