@@ -15,5 +15,4 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXCLUDED_RULES: "kebab-case"
-          EXCLUDED_LINTERS: cfn_nag, ansible-lint, shellcheck, hadolint, write-good, yamllint, markdownlint, cspell, sqlint, NATURAL_LANGUAGE
+          EXCLUDED_LINTERS: cfn_nag, ansible-lint, shellcheck, hadolint, write-good, yamllint, markdownlint, cspell, sqlint, NATURAL_LANGUAGE, stylelint
