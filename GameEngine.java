@@ -11,7 +11,7 @@ import model.Player;
 import view.CommandPrompt;
 
 /**
- * This is the main controller class of MVC model.
+ * This is the main controller class of MVC model,
  * This class has a references of View, Models and various child controllers.
  * This class acts as an intermediary between models/controllers and view.
  */
