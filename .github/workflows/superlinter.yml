@@ -1,21 +1,21 @@
-name: Super-Linter
+# name: Super-Linter
 
-on: push
+# on: push
 
-jobs:
-  super-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+# jobs:
+#   super-lint:
+#     name: Lint code base
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      - name: Run Super-Linter
-        uses: github/super-linter@v4
+#       - name: Run Super-Linter
+#         uses: github/super-linter@v4
         
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DISABLE_LINTERS: stylelint
-          EXCLUDED_LINTERS: cfn_nag, ansible-lint, shellcheck, hadolint, write-good, yamllint, markdownlint, cspell, sqlint, NATURAL_LANGUAGE, stylelint
+#         env:
+#           DEFAULT_BRANCH: main
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           DISABLE_LINTERS: stylelint
+#           EXCLUDED_LINTERS: cfn_nag, ansible-lint, shellcheck, hadolint, write-good, yamllint, markdownlint, cspell, sqlint, NATURAL_LANGUAGE, stylelint
          
